@@ -2,3 +2,5 @@
 02_Crud_With_Array/node_modules
 03_Crud_With_MongoDB/node_modules
 04_Crud_With_MVC/node_modules
+03_Crud_With_MongoDB/.env
+04_Crud_With_MVC/.env
