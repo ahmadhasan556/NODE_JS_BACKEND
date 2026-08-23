@@ -21,7 +21,7 @@ const ChatRoom = ({ username, room, socket, onLeave }) => {
     if (!socket) return;
     if (message.trim()) {
       socket.emit("send", { text: message, room: room, username: username });
-      setMessages((prev) => [...prev, { text: message, room, username }]);
+      setMessages((chat) => [...chat, { text: message, room, username }]);
 
       setMessage("");
     }

@@ -28,7 +28,7 @@ io.on("connection", (socket) => {
 
   socket.on("send", (message) => {
     console.log("Message received:", message);
-    io.to(message.room).emit("message", message); // sabhi ko milega
+    io.to(message.room).emit("message", message);
   });
 });
 

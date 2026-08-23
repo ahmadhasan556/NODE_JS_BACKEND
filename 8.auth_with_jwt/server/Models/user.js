@@ -1,15 +1,15 @@
 import mongoose from "mongoose";
 
-const URLSchema = mongoose.Schema({
-  shortId: {
+const userSchema = new mongoose.Schema({
+  username: {
     type: String,
     required: true,
     unique: true,
   },
-  longUrl: {
+  password: {
     type: String,
     required: true,
   },
 });
 
-export const URLs = mongoose.model("urls", URLSchema);
+export default mongoose.model("User", userSchema);

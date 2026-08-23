@@ -4,7 +4,7 @@ import { io } from "socket.io-client";
 import JoinGroup from "./components/JoinGroup";
 import ChatRoom from "./components/ChatRoom";
 
-const SOCKET_URL = "http://localhost:8000";
+const SOCKET_URL = "http://localhost:8000"; // server url
 let socket;
 function App() {
   const [userInfo, setUserInfo] = useState({ username: "", room: "" });
